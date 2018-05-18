@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Prime Numbers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-group">
+        <label for="numprimes">How many primes would you like?</label>
+        <input id=numprimes type=text class="cs330 form-control" name="primeinput"/>
+        <button id=gobutt onclick="clickedon()" class="cs330 btn-success">Go</button>
+      </div>
+      <table class="table table-striped">
+        <thead>
+	  <tr>
+	    <th>Prime Number</th>
+	  </tr>
+        </thead>
+        <tbody id=primetab></tbody>
+      </table>
+    </div>
+    <script src=prime.js type=text/javascript></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>

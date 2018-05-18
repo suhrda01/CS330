@@ -1,0 +1,20 @@
+  268  telnet knuth.luther.edu 80
+  269  python3 -m http.server
+  270  cd /html
+  271  cd /suhrda01/html
+  272  ls
+  273  cd html
+  274  python3 -m http.server
+  275  cd html
+  276  mkdir cgi-bin
+  277  cd cgi-bin
+  278  emacs hello.py
+  279  chmod +x hello.py
+  280  ls
+  281  ls -1
+  282  ls -l
+  283  ./hello.py
+  284  python3 -m http.server --cgi
+  285  cd html
+  286  python3 -m http.server --cgi
+  287  history

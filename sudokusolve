@@ -1,0 +1,4 @@
+#!/bin/bash
+cat $1 | python3 sudoku.py > sudoku.dimacs
+minisat sudoku.dimacs minisat.out
+cat minisat.out | python3 displaysolution.py

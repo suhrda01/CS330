@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>XKCD Password Creator</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>Password Creator</h1>
+        <hr/>
+        <form action="/processform">
+            <label for="minWord">Minimum Word Length:</label>
+            <select name="minWord" id="minWord">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select>
+
+            <label for="maxWord">Maximum Word Length:</label>
+            <select name="maxWord" id="maxWord">
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+            </select>
+
+            <label for="maxTotal">Maximum Password Length:</label>
+            <select name="maxTotal" id="maxTotal">
+                <option value=16>16</option>
+                <option value=17>17</option>
+                <option value=18>18</option>
+                <option value=19>19</option>
+                <option value=20>20</option>
+                <option value=21>21</option>
+                <option value=22>22</option>
+                <option value=23>23</option>
+                <option value=24>24</option>
+            </select>
+            <label for="intReplace">Replace letters with numbers?</label>
+            <input type="checkbox" id="intReplace" name="intReplace" value="True">
+            <label for="grammar">Grammar</label>
+            <input type="checkbox" id="grammar" name="grammar" value="True">
+            <input type="submit">
+        </form>
+
+        {% block table %}
+        {% endblock table %}
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Practice with SQL Queries</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <h1>SQL Queries</h1>
+        <hr/>
+        <form action="/processform">
+            <label for='continent'>Continent</label>
+            <select name='continent' id='continent'>
+                {% for i in range(0,continents|length) %}
+                    <option value='{{continents[i][0]}}'>{{continents[i][0]}}</option>
+                {% endfor %}
+            </select>
+            <input type="submit">
+        </form>
+
+        {% block table %}
+        {% endblock table %}
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{% extends "index.html" %}
+
+{% block table %}
+<table class='table table-striped'>
+    <tr>
+    {% for i in range(0,cols|length) %}
+        <td>{{cols[i]}}</td>
+    {% endfor %}
+    </tr>
+    {% for i in range(0,data|length) %}
+    <tr>
+        {% for j in range(0,data[i]|length) %}
+        <td>{{data[i][j]}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1 id='foo'></h1>
+        <script>
+            console.log('starting fetch')
+            fetch('/getnum')
+            .then(function(response) {
+                console.log(response)
+                return response.json()
+            })
+            .catch(error => console.error('Error: ', error))
+            .then(function(myJson) {
+                document.getElementById("foo").innerHTML = myJson.number;
+                console.log('all done')
+            })
+        </script>
+    </body>
+</html>

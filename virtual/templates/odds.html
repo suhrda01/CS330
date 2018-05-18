@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p>Here is {{odds|length}} odd numbers</p>
+<table>
+    {% for i in range(0,odds|length,2) %}
+    <tr>
+        <td>{{odds[i]}}</td>
+        <td>{{odds[i+1]}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
